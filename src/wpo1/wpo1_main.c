@@ -33,9 +33,11 @@ int main() {
     // char* str_concatenated = strcat_(my_str,my_str2);
     // printf("\t*string concatenated: %s\n", str_concatenated); 
 
-    char* str_csv = ",,,ok,,ko,op,opp,,,";
-    int cnt = strcntdel_(str_csv, ',');
-    printf("\t*delimiter count: %i\n", cnt); 
+    // char* str_csv = ",,,ok,,ko,op,opp,,,";
+    // int cnt = strcntdel_(str_csv, ',');
+    // printf("\t*delimiter count: %i\n", cnt); 
+
+    
 
 
     return 0;
