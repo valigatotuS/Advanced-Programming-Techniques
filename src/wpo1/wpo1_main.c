@@ -6,7 +6,7 @@
 #include "strlen.c"
 #include "strcpy.c"
 #include "strcat.c"
-#include "strcntdel.c"
+#include "strsplit.c"
 
 int main() {
     /*
@@ -37,7 +37,10 @@ int main() {
     // int cnt = strcntdel_(str_csv, ',');
     // printf("\t*delimiter count: %i\n", cnt); 
 
-    
+    // char** str_splitted = strsplit_(my_str, 'e');
+    // printf("%s", str_splitted[0]);
+
+    strI(my_str);
 
 
     return 0;
