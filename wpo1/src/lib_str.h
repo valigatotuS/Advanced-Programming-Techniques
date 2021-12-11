@@ -16,6 +16,8 @@ int     strlen_(const char* str);
 int     strlen_v0(char* str);
 int     strcntdel_(const char* str, char del);
 int     strcpos_(const char* str, const char c);
-char** strsplit_(const char* str, const char del);
+char**  strsplit_(const char* str, const char del);
+void    strfree_(char* str);
+
 
 #endif
