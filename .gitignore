@@ -1,5 +1,4 @@
 *.exe
 *.o
 *.d
-/dist
-**/build
+*/build/
