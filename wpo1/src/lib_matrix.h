@@ -10,5 +10,7 @@
 
 void matrix_multiplication(const int f[3][3],const int kernel[3][3], int res[3][3]);
 void printM3x3(int M[3][3]);
+// void conv2(int a[3][3], int* w[3][3], int* result[3][3]);
+
 
 #endif

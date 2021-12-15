@@ -38,22 +38,23 @@ int main() {
 
     // printf("%d \n", strcpos_(my_str, 'i'));
 
-    // char** str_splitted = strsplit_(str_csv, ',');
-    // while(*str_splitted)
-    // printf("<%s> \n", *(str_splitted++));
+    char** str_splitted = strsplit_(str_csv, ',');
+    while(*str_splitted)
+    printf("<%s> \n", *(str_splitted++));
 
-    // printf("%p \n %p \n", str_splitted, *str_splitted);
+    printf("%p \n %p \n", str_splitted, *str_splitted);
 
-    // for(int i = 0; str_splitted[i]; i++)
-    //     free(str_splitted[i]);
+    for(int i = 0; str_splitted[i]; i++)
+        free(str_splitted[i]);
 
-    int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    int kernell[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
-    int result[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
-    matrix_multiplication(f,kernell, result);
-    printM3x3(f);
-    printM3x3(kernell);
-    printM3x3(result);
+    // int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    // int kernell[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
+    // int result[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
+    // // matrix_multiplication(f,kernell, result);
+    // conv2(f,kernell, result);
+    // printM3x3(f);
+    // printM3x3(kernell);
+    // printM3x3(result);
     
     return 0;
 }
