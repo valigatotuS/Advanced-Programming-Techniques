@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdarg.h>
+#include <stdio.h>
+#include <stdarg.h>
 #include "wpo2_lib.h"
 
 #pragma region variodic function
@@ -50,13 +50,19 @@ int main() {
 
     #pragma region exercise1
     
-    PrintBitDecomp(8);
+    // PrintBitDecomp(8);
 
     #pragma endregion
 
     #pragma region exercise2
 
-    FancyPrint("%d %d", 5, 5);
+    FancyPrint("Hello, this is a fancyprint, string: %s char: %c int: %i", 3, "str", 'f', 456);
+
+    #pragma endregion
+
+    #pragma region exercise3
+
+    1;
 
     #pragma endregion
 

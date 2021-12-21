@@ -7,8 +7,6 @@
 
 #define getbit(num, pos) (num>>pos&1)
 
-
-
 void PrintBitDecomp(){
     int num;
     scanf("%i", &num);
