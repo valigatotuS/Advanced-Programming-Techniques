@@ -7,10 +7,10 @@
 
 #define getbit(num, pos) (num>>pos&1)
 
-void PrintBitDecomp(){
+void BitDecomp(){
     int num;
     scanf("%i", &num);
-    for (int i = 15; i >= 0; i--){
+    for (int i = 4; i >= 0; i--){
         printf("%i", getbit(num, i));
         if(i%4==0) printf(" | ");
     }

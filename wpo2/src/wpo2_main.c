@@ -50,19 +50,19 @@ int main() {
 
     #pragma region exercise1
     
-    // PrintBitDecomp(8);
+    BitDecomp();
 
     #pragma endregion
 
     #pragma region exercise2
 
-    FancyPrint("Hello, this is a fancyprint, string: %s char: %c int: %i", 3, "str", 'f', 456);
+    //FancyPrint("Hello, this is a fancyprint, string: %s char: %c int: %i", 3, "str", 'f', 456);
 
     #pragma endregion
 
     #pragma region exercise3
 
-    1;
+    // ReadConfigFile("./files/config.txt");
 
     #pragma endregion
 
