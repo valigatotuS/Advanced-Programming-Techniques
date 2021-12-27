@@ -16,7 +16,7 @@ int Sum(int num, ...){
 
 int main() {
     /*
-        Comment/Uncomment desired code to test the functions -> string-operations
+        Comment/Uncomment desired code to test the functions 
     */
 
     #pragma region intro code
@@ -50,7 +50,7 @@ int main() {
 
     #pragma region exercise1
     
-    BitDecomp();
+    // BitDecomp();
 
     #pragma endregion
 
@@ -62,7 +62,7 @@ int main() {
 
     #pragma region exercise3
 
-    // ReadConfigFile("./files/config.txt");
+    ReadConfigFile("./files/config.txt");
 
     #pragma endregion
 
