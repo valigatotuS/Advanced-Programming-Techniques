@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void FloatPEmul();
+void    FloatPEmul(float number);
+char*   BitDecomp2(int decimal, int length);
 
 #endif

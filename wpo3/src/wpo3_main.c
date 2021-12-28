@@ -79,7 +79,7 @@ int main() {
     #pragma endregion
 
     #pragma region exercise1
-    FloatPEmul();
+    // FloatPEmul(-1024.3);
     #pragma endregion
 
     return 0;
