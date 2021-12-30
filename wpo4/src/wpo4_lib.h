@@ -22,5 +22,6 @@ struct linked_queue     {struct node* head; struct node* tail; uint count;};
 void InitLQueue         (struct linked_queue* lq);
 void EnqueueLQ          (struct linked_queue* lq, char value);
 char DequeueLQ          (struct linked_queue* lq);
+void EnqueueLQSorted    (struct linked_queue* lq, char value);
 
 #endif

@@ -128,7 +128,20 @@ int main() {
 
     /*Sorted List*/
 
-    
+    struct linked_queue my_lq;
+    InitLQueue(&my_lq);
+
+    EnqueueLQSorted(&my_lq, 'A');
+    EnqueueLQSorted(&my_lq, 'C');
+    EnqueueLQSorted(&my_lq, 'B');
+    EnqueueLQSorted(&my_lq, 'A');
+    EnqueueLQSorted(&my_lq, 'D');
+
+    for(struct node* curs = my_lq.head; curs; curs = curs->next)
+        printf("%c\n", curs->data);
+
+    printf("head = %c\n", my_lq.head->data);
+    printf("tail = %c\n", my_lq.tail->data);
 
     #pragma endregion
 
