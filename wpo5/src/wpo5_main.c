@@ -1,4 +1,5 @@
-#include "wpo4_lib.h"
+#include "wpo5_lib.h"
+
 
 int main() {
     /*
@@ -7,9 +8,12 @@ int main() {
 
     #pragma region intro code
 
+    // dijkstra...
+
     #pragma endregion
 
     #pragma region exercise1
+    Dijkstra();
     #pragma endregion
 
     return 0;
