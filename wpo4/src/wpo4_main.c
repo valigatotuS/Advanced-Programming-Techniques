@@ -34,6 +34,30 @@ int main() {
     //     uint write_index;   // pointing to youngest
     // } ringbuffer_t
 
+    /*2.1 Linked List*/
+
+    // struct list_t{
+    //     char data;
+    //     struct list_t *next;   // recursive pointer
+    // }
+
+    /*2.2 Iterate through list*/
+
+    // while(p!=0)
+    //     p = p->next;
+
+    /*2.3 Linear List*/   
+
+    // struct list_t{
+    //     char data;
+    //     struct list_t *next;
+    //     struct list_t *previous;
+    // }
+
+    // otherwise simply link last element to the first one (2.1)
+
+
+
     #pragma endregion
 
     #pragma region exercise1
@@ -88,6 +112,23 @@ int main() {
     // printf("read rb: -%c-\n", Read(&my_rbuffer));
     // printf("read rb: -%c-\n", Read(&my_rbuffer));
     // printf("read rb: -%c-\n", Read(&my_rbuffer)); // must print a warning message r_i=w_i
+
+    #pragma endregion
+
+    #pragma region exercise2
+
+    /*Linked Queue*/
+
+    // struct linked_queue my_lq;
+    // InitLQueue(&my_lq);
+    // EnqueueLQ(&my_lq, 'V');
+    // EnqueueLQ(&my_lq, 'Q');
+    // printf("succes -%c- \n", DequeueLQ(&my_lq));
+    // printf("succes -%c- \n", DequeueLQ(&my_lq));
+
+    /*Sorted List*/
+
+    
 
     #pragma endregion
 
