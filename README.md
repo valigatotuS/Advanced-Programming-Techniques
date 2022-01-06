@@ -28,7 +28,7 @@ In order to:
 - get version control
 - post issues
 - write some documentation
-- sharing code with classmates 
+- share code with classmates 
 - use repo between my devices
 
 ## Deploy project
