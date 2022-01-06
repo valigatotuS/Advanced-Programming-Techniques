@@ -8,10 +8,13 @@ int main() {
         Comment/Uncomment desired code to test the functions        
     */
 
+    #pragma region String Operations
+
     char* my_str = ",,,ok,,ko,op,opp,,,";   //"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, beatae.";
     char* str_csv = ",,,ok,,ko,op,opp,,,"; 
 
     printf("My string: <%s>\n", my_str);
+
 
     /*String Length*/
 
@@ -58,6 +61,9 @@ int main() {
     // for(int i = 0; str_splitted[i]; i++)
     //     free(str_splitted[i]);
 
+    #pragma endregion
+
+    #pragma region Matrix Operations
     /*Matrix Multiplication*/
 
     // int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
@@ -81,6 +87,6 @@ int main() {
             printf("%d ", outputArray[i][j]);
         printf("\n");
     }
-    
+    #pragma endregion
     return 0;
 }
