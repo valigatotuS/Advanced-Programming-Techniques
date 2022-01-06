@@ -40,6 +40,7 @@ Ubuntu has been installed bare metal (in dualboot aside W10) for better performa
 2. Go to correct directory (ex : ./wpo1)
 3. Execute Makefile
 4. Call exe
+
 PS: Uncomment/Comment the code within <wpox_main.c> to test the desired functions
 
 ## Credits 
