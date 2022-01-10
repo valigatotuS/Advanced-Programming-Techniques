@@ -97,13 +97,6 @@ In order to:
     │   │   └── writerb.c
     │   └── wpo4-exercises.pdf
     └── wpo5
-        ├── build
-        │   ├── main
-        │   └── src
-        │       ├── dijkstra.c.d
-        │       ├── dijkstra.c.o
-        │       ├── wpo5_main.c.d
-        │       └── wpo5_main.c.o
         ├── Makefile
         ├── src
         │   ├── dijkstra.c
