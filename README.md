@@ -32,7 +32,6 @@ In order to:
 - use repo between my devices
 
 ### Project structure
-    zzz
 <details>
 <summary>Show tree</summary>
 
