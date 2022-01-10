@@ -4,14 +4,14 @@
 */
 #include "wpo2_lib.h"
 
-#define PRECISION 16
+#define PRECISION 8
 #define getbit(num, pos) (num>>pos&1)
 
 void BitDecomp(){
     int num;
     scanf("%i", &num);
-    for (int i = PRECISION-1; i >= 0; i--){
-        printf("%i", getbit(num, i));
+    for (int i = 1; i <= PRECISION; i++){
+        printf("%i", getbit(num, PRECISION-i));
         if(i%4==0) printf(" | ");
     }
     printf("\n");
