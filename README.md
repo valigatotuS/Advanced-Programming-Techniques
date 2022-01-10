@@ -35,7 +35,7 @@ In order to:
 
 <details>
   <summary>Show tree</summary>
-  
+"""  
 .
 ├── README.md
 ├── sandbox
@@ -103,6 +103,7 @@ In order to:
         ├── dijkstra.c
         ├── wpo5_lib.h
         └── wpo5_main.c
+"""
 </details>
 
 ## Deploy project
