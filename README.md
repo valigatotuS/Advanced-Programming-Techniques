@@ -32,77 +32,78 @@ In order to:
 - use repo between my devices
 
 ### Project structure
-
 <details>
-  <summary>Show tree</summary>
-  
-.
-├── README.md
-├── sandbox
-│   ├── Makefile
-│   ├── README.md
-│   └── src
-│       └── sandbox.c
-├── wpo1
-│   ├── Makefile
-│   └── src
-│       ├── lib_matrix.h
-│       ├── lib_str.h
-│       ├── matrixconv.c
-│       ├── matrixmul.c
-│       ├── strcat.c
-│       ├── strcntdel.c
-│       ├── strcpos.c
-│       ├── strcpy.c
-│       ├── strfree.c
-│       ├── strlen.c
-│       ├── strsplit.c
-│       └── wpo1_main.c
-│   
-├── wpo2
-│   ├── files
-│   │   └── config.txt
-│   ├── Makefile
-│   └── src
-│       ├── area.c
-│       ├── bitdecomp.c
-│       ├── countchar.c
-│       ├── fancyprint.c
-│       ├── readconfigfile.c
-│       ├── readoperation.c
-│       ├── wpo2_lib.h
-│       └── wpo2_main.c
-│   
-├── wpo3
-│   ├── Makefile
-│   └── src
-│       ├── bitdecomp2.c
-│       ├── floatingpointemulator.c
-│       ├── wpo3_lib.h
-│       └── wpo3_main.c
-│   
-├── wpo4
-│   ├── Makefile
-│   └── src
-│       ├── dequeue.c
-│       ├── dequeuelq.c
-│       ├── enqueue.c
-│       ├── enqueuelq.c
-│       ├── enqueuelqsorted.c
-│       ├── initlinkedqueue.c
-│       ├── popstack.c
-│       ├── pushstack.c
-│       ├── readrb.c
-│       ├── wpo4_lib.h
-│       ├── wpo4_main.c
-│       └── writerb.c
-│   
-└── wpo5
-    ├── Makefile
-    └── src
-        ├── dijkstra.c
-        ├── wpo5_lib.h
-        └── wpo5_main.c
+<summary>Show tree</summary>
+
+    .
+    ├── README.md
+    ├── sandbox
+    │   ├── Makefile
+    │   ├── README.md
+    │   └── src
+    │       └── sandbox.c
+    ├── wpo1
+    │   ├── Makefile
+    │   ├── src
+    │   │   ├── lib_matrix.h
+    │   │   ├── lib_str.h
+    │   │   ├── matrixconv.c
+    │   │   ├── matrixmul.c
+    │   │   ├── strcat.c
+    │   │   ├── strcntdel.c
+    │   │   ├── strcpos.c
+    │   │   ├── strcpy.c
+    │   │   ├── strfree.c
+    │   │   ├── strlen.c
+    │   │   ├── strsplit.c
+    │   │   └── wpo1_main.c
+    │   └── wpo1-exercises.pdf
+    ├── wpo2
+    │   ├── files
+    │   │   └── config.txt
+    │   ├── Makefile
+    │   ├── src
+    │   │   ├── area.c
+    │   │   ├── bitdecomp.c
+    │   │   ├── countchar.c
+    │   │   ├── fancyprint.c
+    │   │   ├── readconfigfile.c
+    │   │   ├── readoperation.c
+    │   │   ├── wpo2_lib.h
+    │   │   └── wpo2_main.c
+    │   └── wpo2-exercises.pdf
+    ├── wpo3
+    │   ├── Makefile
+    │   ├── src
+    │   │   ├── bitdecomp2.c
+    │   │   ├── floatingpointemulator.c
+    │   │   ├── wpo3_lib.h
+    │   │   └── wpo3_main.c
+    │   └── wpo3-exercises.pdf
+    ├── wpo4
+    │   ├── Makefile
+    │   ├── src
+    │   │   ├── dequeue.c
+    │   │   ├── dequeuelq.c
+    │   │   ├── enqueue.c
+    │   │   ├── enqueuelq.c
+    │   │   ├── enqueuelqsorted.c
+    │   │   ├── initlinkedqueue.c
+    │   │   ├── popstack.c
+    │   │   ├── pushstack.c
+    │   │   ├── readrb.c
+    │   │   ├── wpo4_lib.h
+    │   │   ├── wpo4_main.c
+    │   │   └── writerb.c
+    │   └── wpo4-exercises.pdf
+    └── wpo5
+        ├── Makefile
+        ├── src
+        │   ├── dijkstra.c
+        │   ├── wpo5_lib.h
+        │   └── wpo5_main.c
+        └── wpo5-exercises.pdf
+
 </details>
 
 ## Deploy project
