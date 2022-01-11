@@ -5,9 +5,10 @@
 
 #include "wpo2_lib.h"
 
-double ReadOperation(char* line){
+double read_operation(char* line){
     int operation = -1, j = 0;
-    char ops[][16] = {"DIVISION","SUM","SUBTRACTION","MULTIPLICATION"};
+    char ops_s[][16] = {"DIVISION","SUM","SUBTRACTION","MULTIPLICATION"};
+    enum {DIV=1,SUM,SUB,MUL}ops;
     double dvals[8];
 
     // getting operation 
@@ -15,7 +16,7 @@ double ReadOperation(char* line){
         
     // checking validity of operation
     while(operation < 4){ 
-        if(strcmp(op, ops[operation++])==0)
+        if(strcmp(op, ops_s[operation++])==0)
             break;          
     }
         
@@ -34,19 +35,19 @@ double ReadOperation(char* line){
         case -1:
             printf("Invalid operation");
             exit(1);
-        case 1:
+        case DIV:
             result = dvals[0] / dvals[1];
             break;
-        case 2:
+        case SUM:
             while(dvals[j])
                 result += dvals[j++];
             break;
-        case 3:
+        case SUB:
             result = dvals[j++];
             while(dvals[j])
                 result -= dvals[j++];
             break;
-        case 4:
+        case MUL:
             result = dvals[0] * dvals[1];
             break;
     }

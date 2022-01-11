@@ -5,7 +5,7 @@
 
 #include "wpo2_lib.h"
 
-int CountChar(const char* str, const char token){
+int count_char(const char* str, const char token){
     int count = 0;
     while(*str){
         if(*(str++)==token)

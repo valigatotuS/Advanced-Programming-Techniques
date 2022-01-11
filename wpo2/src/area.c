@@ -7,10 +7,10 @@
 
 typedef int (*area_f)(int,int);
 
-int CalcArea(area_f ptr, int h, int w){
+int calc_area(area_f ptr, int h, int w){
     return (*ptr)(h,w);
 }
 
-int AreaR(int width, int height){
+int area_r(int width, int height){
     return width*height;
 }

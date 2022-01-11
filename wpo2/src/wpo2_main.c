@@ -42,7 +42,7 @@ int main() {
     //     fclose(fp);
     // }
     
-    // int area_ = CalcArea(&AreaR,5,6);
+    // int area_ = calc_area(&area_r,5,6);
     // printf("%i\n", area_);
 
     // printf("%i\n", Sum(5,1,1,1,1,1));
@@ -50,19 +50,19 @@ int main() {
 
     #pragma region exercise1
     
-    BitDecomp();
+    // bit_decomp();
 
     #pragma endregion
 
     #pragma region exercise2
 
-    //FancyPrint("Hello, this is a fancyprint, string: %s char: %c int: %i", 3, "str", 'f', 456);
+    // fancy_print("Hello, this is a fancyprint, string: %s char: %c int: %i", 3, "str", 'f', 456);
 
     #pragma endregion
 
     #pragma region exercise3
 
-    // ReadConfigFile("./files/config.txt");
+    read_config_file("./files/config.txt");
 
     #pragma endregion
 

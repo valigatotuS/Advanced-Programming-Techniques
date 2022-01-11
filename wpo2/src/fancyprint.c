@@ -5,7 +5,7 @@
 
 #include "wpo2_lib.h"
 
-void FancyPrint(const  char* str, int num, ...){
+void fancy_print(const  char* str, int num, ...){
 
     va_list argptr;
     va_start( argptr, num );

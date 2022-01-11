@@ -7,7 +7,7 @@
 #define PRECISION 8
 #define getbit(num, pos) (num>>pos&1)
 
-void BitDecomp(){
+void bit_decomp(){
     int num;
     scanf("%i", &num);
     for (int i = 1; i <= PRECISION; i++){

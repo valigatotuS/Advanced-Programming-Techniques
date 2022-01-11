@@ -12,12 +12,12 @@
 #include <stdarg.h>
 
 typedef int     (*area_f)(int,int);
-int             CalcArea(area_f ptr, int h, int w);
-int             AreaR(int width, int height);
-void            BitDecomp();
-void            FancyPrint(const  char* str, int num, ...);
-int             CountChar(const char* str, const char token);
-void            ReadConfigFile(const char* path);
-double          ReadOperation(char* line);
+int             calc_area(area_f ptr, int h, int w);
+int             area_r(int width, int height);
+void            bit_decomp();
+void            fancy_print(const  char* str, int num, ...);
+int             count_char(const char* str, const char token);
+void            read_config_file(const char* path);
+double          read_operation(char* line);
 
 #endif
