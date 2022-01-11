@@ -74,7 +74,7 @@ int main(){
     cw1.i4 = 0xB;
     cw1.i8 = 0x12;
 
-    printf("cw...: %d %d %d\n", cw1.i1,cw1.i4,cw1.i8);
+    printf("cw...:%3d,%d,%d\n", cw1.i1,cw1.i4,cw1.i8);
     char A = 'A';
 
     /*string-formatter*/
@@ -96,7 +96,42 @@ int main(){
 
     printf("a_p: %0.2f %0.2f %p\n", *a_p+1, *a_p, &a_p);
 
+    void printC(char c){
+        printf("\n%c\n", c);
+    }
 
+    void (*f_p)(char); //function pointer
+    f_p = printC;
+    (*f_p)('K');
 
+    /*MACROS*/
+
+    #define MAX(a,b) (a>b?a:b)
+    #define MIN(a,b) (a<b?a:b)
+
+    printf("MAX(a,b): %d\n", MAX(5,9));
+    printf("MIN(a,b): %d\n", MIN(5,9));
+
+    // int arri[4] = {0,1,2,3};
+    // printf("\n%u", &arri[0]);
+    char* ss;
+    ss = "okoko";
+
+    /*Other*/
+
+    printf ("%d\n", printf ("valq"));
+
+    int c;
+    printf ("%d\n", c);
+    int i = 5;
+    printf("%d\n", i=++i==6);
+    printf("%d\n", 4+2%-8);
+    int x = 15;
+    static int ee;
+    printf("\n%d,%d,%d,%d\n", x!=15, x=20, x<30, ee);
+    const int zz = 32768;
+    printf("%ld\n", sizeof(char));
     return 0;
+    
+    
 }
