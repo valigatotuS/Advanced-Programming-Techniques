@@ -9,13 +9,11 @@
 
 char* strcpy_(const char* str){
     int str_length = strlen_(str);
-    char* strcpy = (char*)malloc((str_length+1)*sizeof(char));
     int index = 0;
+    char* strcpy = (char*)malloc((str_length+1)*sizeof(char));
 
-    while(*str){
-        strcpy[index] = *(str++); 
-        index++;
-    }
+    while(*str)
+        strcpy[index++] = *(str++); 
 
     strcpy[index] = '\0';
 

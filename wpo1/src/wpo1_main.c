@@ -38,7 +38,7 @@ int main() {
     // char* my_str2 = "=>Concatted";
     // char* str_concatenated = strcat_(my_str,my_str2);
     // printf("\t*string concatenated: %s\n", str_concatenated); 
-    // strfree_(str_concatted);
+    // strfree_(str_concatenated);
 
     /*String Special Delimiter Count*/
 
@@ -48,13 +48,13 @@ int main() {
 
     /*Character position*/
 
-    // printf("%d \n", strcpos_(my_str, 'i'));
+    // printf("%d \n", strcpos_(my_str, 'k'));
 
     /*String Split*/
 
     // char** str_splitted = strsplit_(str_csv, ',');
     // while(*str_splitted)
-    // printf("<%s> \n", *(str_splitted++));
+    //     printf("<%s> \n", *(str_splitted++));
 
     // printf("%p \n %p \n", str_splitted, *str_splitted);
 
@@ -67,26 +67,24 @@ int main() {
     /*Matrix Multiplication*/
 
     // int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    // int kernell[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
+    // int kernel[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
     // int result[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
-    // // matrix_multiplication(f,kernell, result);
-    // conv2(f,kernell, result);
-    // printM3x3(f);
-    // printM3x3(kernell);
-    // printM3x3(result);
+    // matrix_multiplication(f,kernel,result);
+    // int** tt = matrix_multiplication2(f,kernel);
+    
+    // printM(f);
+    // printM(kernel);
+    // printM(result);
+    // printM_p(tt);
 
     /*Matrix Convolution*/
 
+    int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
     int kernel[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
-    int inputArray[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
 
-    int** outputArray = MatrixConvolution(inputArray, kernel);
-
-    for (int i=0; i < 3; i++){       
-        for (int j=0; j < 3; j++)
-            printf("%d ", outputArray[i][j]);
-        printf("\n");
-    }
+    int** resArray = MatrixConvolution(f, kernel);
+    printM_p(resArray);
+    
     #pragma endregion
     return 0;
 }

@@ -31,9 +31,10 @@ char** strsplit_(const char* str, const char del){
 
     while (*str && w_index<arr_size){
         // skipping delimiter
-        while(*str==del && *str)
+        while(*str==del)
             str++;
-
+        if(!(*str))
+            break;
         // allocating memory for the word 
         str_size = strcpos_(str, del);
         arr[w_index] = (char*)malloc((str_size+1)*sizeof(char));
