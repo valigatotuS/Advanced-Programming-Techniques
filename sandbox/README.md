@@ -31,8 +31,10 @@ More about:
 #### using the make utility
 
 Makefiles are called with the make utility.
+
     make
 We can also give some extra instructions.
+
     make CFLAGS="-Wall" #passing some options to the C-preprocessor
 
 
