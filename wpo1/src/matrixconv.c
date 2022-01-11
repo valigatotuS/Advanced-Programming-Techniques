@@ -5,7 +5,7 @@
 
 #include "lib_matrix.h"
 
-int** MatrixConvolution(int f[3][3], int kernel[3][3]){
+int** matrix_convolution(int f[3][3], int kernel[3][3]){
     // Matrix[3X3] with blank border => [5X5]
     int rows = 5, cols = 5;
     int tmpM[rows][cols];

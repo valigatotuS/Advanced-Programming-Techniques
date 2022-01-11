@@ -82,7 +82,7 @@ int main() {
     int f[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
     int kernel[3][3] = {{0,-1,0},{-1,4,-1},{0,-1,0}};
 
-    int** resArray = MatrixConvolution(f, kernel);
+    int** resArray = matrix_convolution(f, kernel);
     printM_p(resArray);
     
     #pragma endregion
