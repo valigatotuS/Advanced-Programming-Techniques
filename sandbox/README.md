@@ -3,12 +3,12 @@ Short summary about what I learned about the C language
 
 ## The basics
 
-### Programming languages hierarchy:
+### Programming languages hierarchy
 - machine code (binary/hex/octaal) [functiecode + operand]
 - assembly                         [mnemo_fc + name]
 - C & higher-level languages       [mnemo_f + symb_vars]
 
-### Code execution:
+### Code execution
 
 - Preprocessor outputs expanded source code (replaces #...)
     - Header files: containing the function declarations & macro definitions 
@@ -18,5 +18,21 @@ Short summary about what I learned about the C language
 - Linker links the object files together into executable (.exe)
 - Loader loads the program into the memory.
 
+#### Makefiles
+
+For conducting the orchestra we use a __Makefile__.
+The Makefile defines these set of instructions (not loader) as shell commands.
+
+More about:
+- [jargon](https://berrendorf.inf.h-brs.de/sonstiges/make.html)
+- [flags](https://earthly.dev/blog/make-flags/)
+- [GNU manual](https://www.gnu.org/software/make/manual/make.html)
+
+#### using the make utility
+
+Makefiles are called with the make utility.
+    make
+We can also give some extra instructions.
+    make CFLAGS="-Wall" #passing some options to the C-preprocessor
 
 

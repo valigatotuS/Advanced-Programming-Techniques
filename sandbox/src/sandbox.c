@@ -55,12 +55,12 @@ int main(){
     /*enum*/
 
     enum kleur {
-        rood = -10, groen, blauw, paars, geel
+        rood = 65, groen, blauw, paars, geel
     } kleuren;
     kleuren = groen;
-    int r = rood, g = groen, b = blauw, p = kleuren, ge = geel;
+    char r = rood, g = groen, b = blauw, p = kleuren, ge = geel;
 
-    printf("%d %d %d %d %d\n", r, g, b, p, ge);
+    printf("%c %c %c %c %c\n", r, g, b, p, ge);
 
     /*bitfields*/
 
@@ -89,7 +89,12 @@ int main(){
     }
     printf("\n<%d %d %d>\n", supp(),supp(),supp());
 
+    /*pointers*/
 
+    double *a_p, array[] = {7.,9.6,7.4,48.4,5.};
+    a_p = array;
+
+    printf("a_p: %0.2f %0.2f %p\n", *a_p+1, *a_p, &a_p);
 
 
 
