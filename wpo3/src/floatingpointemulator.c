@@ -5,7 +5,7 @@
 
 #include "wpo3_lib.h"
 
-void FloatPEmul(float number){
+void float_p_emul(float number){
     
     typedef struct{
         uint mantissa:23; // defines accuracy of number           LeastSignificantBit
@@ -22,7 +22,7 @@ void FloatPEmul(float number){
     sp.number = number;
 
     printf("%s|%s|%s\n",
-        BitDecomp2(sp.field.sign, 1),
-        BitDecomp2(sp.field.exponent, 8),
-        BitDecomp2(sp.field.mantissa, 32));
+        bit_decomp2(sp.field.sign, 1),
+        bit_decomp2(sp.field.exponent, 8),
+        bit_decomp2(sp.field.mantissa, 32));
 }

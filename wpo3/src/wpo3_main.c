@@ -79,7 +79,17 @@ int main() {
     #pragma endregion
 
     #pragma region exercise1
-    // FloatPEmul(-1024.3);
+    // float_p_emul(-1024.3);
+    #pragma endregion
+
+    #pragma region extra
+    
+    int array[] = {4,5,8,2,2,3,5,4,47,1,5,6}, size = 12;
+    bubble_sort(array,size);
+    
+    for(int i = 0; i < size; i++)
+        printf("%d,",array[i]);
+
     #pragma endregion
 
     return 0;

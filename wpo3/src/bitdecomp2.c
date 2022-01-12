@@ -5,15 +5,14 @@
 
 #include "wpo3_lib.h"
 
-#define getbit(num, pos) (num>>pos&1)
+#define GETBIT(num, pos) (num>>pos&1)
 
-char* BitDecomp2(int decimal, int length){
+char* bit_decomp2(int decimal, int length){
     char* bin = (char*)malloc((length+1)*sizeof(char));
 
     for (int i = length-1; i >= 0; i--)
-        bin[length-i-1] = '0' + getbit(decimal, i); //ASCII-table
+        bin[length-i-1] = '0' + GETBIT(decimal, i); //ASCII-table
     bin[length] = '\0';
 
-    // printf("-%s-\n", bin);
     return bin;
 }

@@ -9,7 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void    FloatPEmul(float number);
-char*   BitDecomp2(int decimal, int length);
+void    float_p_emul(float number);
+char*   bit_decomp2(int decimal, int length);
+void    bubble_sort(int arr[], int size);
 
 #endif
