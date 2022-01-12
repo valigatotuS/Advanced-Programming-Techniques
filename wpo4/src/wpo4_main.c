@@ -113,6 +113,8 @@ int main() {
     // printf("read rb: -%c-\n", Read(&my_rbuffer));
     // printf("read rb: -%c-\n", Read(&my_rbuffer)); // must print a warning message r_i=w_i
 
+    // free(my_rbuffer.data);
+
     #pragma endregion
 
     #pragma region exercise2
@@ -128,20 +130,22 @@ int main() {
 
     /*Sorted List*/
 
-    struct linked_queue my_lq;
-    InitLQueue(&my_lq);
+    // struct linked_queue my_lq;
+    // InitLQueue(&my_lq);
 
-    EnqueueLQSorted(&my_lq, 'A');
-    EnqueueLQSorted(&my_lq, 'C');
-    EnqueueLQSorted(&my_lq, 'B');
-    EnqueueLQSorted(&my_lq, 'A');
-    EnqueueLQSorted(&my_lq, 'D');
+    // EnqueueLQSorted(&my_lq, 'A');
+    // EnqueueLQSorted(&my_lq, 'C');
+    // EnqueueLQSorted(&my_lq, 'B');
+    // EnqueueLQSorted(&my_lq, 'A');
+    // EnqueueLQSorted(&my_lq, 'D');
 
-    for(struct node* curs = my_lq.head; curs; curs = curs->next)
-        printf("%c\n", curs->data);
+    // for(struct node* curs = my_lq.head; curs; curs = curs->next)
+    //     printf("%c\n", curs->data);
 
-    printf("head = %c\n", my_lq.head->data);
-    printf("tail = %c\n", my_lq.tail->data);
+    // printf("head = %c\n", my_lq.head->data);
+    // printf("tail = %c\n", my_lq.tail->data);
+
+    // DequeueLQ(&my_lq), DequeueLQ(&my_lq), DequeueLQ(&my_lq), DequeueLQ(&my_lq);
 
     #pragma endregion
 
