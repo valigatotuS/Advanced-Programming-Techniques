@@ -119,5 +119,4 @@ Ubuntu has been installed bare metal (in dualboot aside W10) for better performa
 PS: Uncomment/Comment the code within <wpox_main.c> to test the desired functions
 
 ## Credits 
-This is a course at the VUB from the instructors An Braeken, Thibaut Vandervelden & Thibault Thetier for 3BA-students in Industrial Engineering (ELO-ICT).
-
+This is a course at the VUB from the instructors Ann B., Thibaut V. & Thibault T. for 3BA-students in Industrial Engineering (ELO-ICT).
